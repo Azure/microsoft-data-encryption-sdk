@@ -24,3 +24,26 @@ In order to access the key in Azure Key Vault and use it for encryption and decr
    1. Wrap Key
    1. Verify
    1. Sign
+
+## In this section
+
+#### [DataEncryption_IEnumerable](DataEncryption_IEnumerable)
+Encrypt an enumerable list of numbers
+
+#### [DataEncryptionDecryption_AKVInteractiveAuthentication](DataEncryptionDecryption_AKVInteractiveAuthentication)
+Authenticate to Azure Key Vault interactively
+
+#### [DataEncryptionDecryption_CustomObject](DataEncryptionDecryption_CustomObject)
+Encrypt and decrypt a custom object
+
+#### [DataEncryptionDecryption_CustomSettings](DataEncryptionDecryption_CustomSettings)
+Encrypt and decrypt a Guid using custom settings
+
+#### [DataEncryptionDecryption_DefaultSettings](DataEncryptionDecryption_DefaultSettings)
+Encrypt and decrypt a DateTime using default settings
+
+#### [DataEncryptionDecryption_PlainTextEncryptionKey](DataEncryptionDecryption_PlainTextEncryptionKey)
+Encrypt and decrypt plain text
+
+#### [FileEncryptionDecryption_ParquetFile](FileEncryptionDecryption_ParquetFile)
+Encrypt and decrypt a parquet file
