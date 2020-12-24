@@ -31,11 +31,11 @@ This module implements the key store provider interface using Azure Key Vault. I
 
 ## Using the SDK for data protection in Azure
 
-The below diagram shows an example of an Azure application and illustrates the benefits of the Microsoft Data Encryption SDK. 
+The below diagram shows an example of an Azure application and illustrates the benefits of the Microsoft Data Encryption SDK.
 
 The sample application is a data analytics pipeline that loads data stored in parquet files on premises to Azure Data Lake. Subsequently, Azure Data Factory jobs transform and transport the data to other Azure data services, including Synapse SQL, CosmosDB and Azure SQL. Then, custom applications hosted in Azure VMs or Azure App Services, and Spark jobs in Synapse Analytics access and process the data.
 
-![Microsoft Encryption SDK Overview Diagram](/media/SdkDiagram.png)
+![Microsoft Encryption SDK Overview Diagram](/media/SdkDiagram.jpg)
 
 In such applications, the SDK helps ensure:
 
