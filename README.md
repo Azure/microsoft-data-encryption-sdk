@@ -1,3 +1,8 @@
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/dotnet/sqlclient/master/LICENSE)
+[![Nuget](https://img.shields.io/nuget/dt/Microsoft.Data.Encryption.Cryptography?label=Microsoft.Data.Encryption.Cryptography&style=flat-square&color=green)](https://www.nuget.org/packages/Microsoft.Data.Encryption.Cryptography)
+[![Nuget](https://img.shields.io/nuget/dt/Microsoft.Data.Encryption.FileEncryption?label=Microsoft.Data.Encryption.FileEncryption&style=flat-square&color=green)](https://www.nuget.org/packages/Microsoft.Data.Encryption.FileEncryption)
+[![Nuget](https://img.shields.io/nuget/dt/Microsoft.Data.Encryption.AzureKeyVaultProvider?label=Microsoft.Data.Encryption.AzureKeyVaultProvider&style=flat-square&color=green)](https://www.nuget.org/packages/Microsoft.Data.Encryption.AzureKeyVaultProvider)
+
 # Microsoft Data Encryption SDK (Preview)
 
 The Microsoft Data Encryption SDK provides encryption support to applications. It allows developers to implement column- or field-level encryption for data stored in various data stores, including Azure data services.
