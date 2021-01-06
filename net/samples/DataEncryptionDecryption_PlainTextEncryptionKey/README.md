@@ -1,8 +1,8 @@
 # Encrypt and decrypt plain text
 
 This sample:
-- Generates a plaintext DEK.
-- Encrypts and decrypts a number and a string.
+- Generates a plaintext key.
+- Encrypts and decrypts a string using a plaintext key.
 - Prints plaintext values (before and after encryption) and the encrypted values.
 
 ## Run the sample

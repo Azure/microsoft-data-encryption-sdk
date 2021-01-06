@@ -40,7 +40,7 @@ Encrypt and decrypt a Guid using custom settings
 Encrypt and decrypt a DateTime using default settings
 
 #### [DataEncryptionDecryption_PlainTextEncryptionKey](DataEncryptionDecryption_PlainTextEncryptionKey)
-Encrypt and decrypt plain text
+Encrypt and decrypt a string using a plaintext key
 
 #### [FileEncryptionDecryption_ParquetFile](FileEncryptionDecryption_ParquetFile)
 Encrypt and decrypt a parquet file

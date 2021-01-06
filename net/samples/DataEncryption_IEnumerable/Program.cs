@@ -12,7 +12,7 @@ namespace DataEncryption_IEnumerable {
         /// <summary>
         /// TODO: Provide AKV Key URL here to run this sample.
         /// </summary>
-        public const string AzureKeyVaultKeyPath = "https://contosoaekeyvault.vault.azure.net:443/ExampleKey/ee1a695119e343328af6edbbd8d22093";
+        public const string AzureKeyVaultKeyPath = "https://yourvault.vault.azure.net:443/ExampleKey/ee1a695119e343328af6edbbd8d22093";
 
         // New Token Credential to authenticate to Azure interactively.
         public static readonly TokenCredential TokenCredential = new InteractiveBrowserCredential();
