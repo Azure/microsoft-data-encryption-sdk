@@ -8,27 +8,18 @@ using Microsoft.Data.Encryption.Cryptography.Serializers;
 namespace DataEncryptionDecryption_CustomSettings {
     public class Program {
         /// <summary>
-        /// TODO: Provide AKV configuration details here to run this sample.
+        /// TODO: Provide AKV Key URL here to run this sample.
         /// </summary>
-        static class ClientConfiguration {
-            public const string AzureKeyVaultKeyPath = "https://{KeyVaultName}.vault.azure.net/keys/{Key}/";
-            public const string AzureTenantId = "{Azure_Key_Vault_Active_Directory_Tenant_Id}";
-            public const string AzureClientId = "{Application_Client_ID}";
-            public const string AzureClientSecret = "{Application_Client_Secret}";
-        }
+        public const string AzureKeyVaultKeyPath = "https://contosoaekeyvault.vault.azure.net:443/ExampleKey/ee1a695119e343328af6edbbd8d22093";
 
         // New Token Credential to authenticate to Azure
-        public static readonly TokenCredential TokenCredential = new ClientSecretCredential (
-            tenantId: ClientConfiguration.AzureTenantId,
-            clientId: ClientConfiguration.AzureClientId,
-            clientSecret: ClientConfiguration.AzureClientSecret
-        );
+        public static readonly TokenCredential TokenCredential = new InteractiveBrowserCredential();
 
         // Azure Key Vault provider that allows client applications to access a key encryption key stored in Microsoft Azure Key Vault.
         public static readonly EncryptionKeyStoreProvider azureKeyProvider = new AzureKeyVaultKeyStoreProvider (TokenCredential);
 
         // Represents the key encryption key that encrypts and decrypts the data encryption key
-        public static readonly KeyEncryptionKey keyEncryptionKey = new KeyEncryptionKey ("KEK", ClientConfiguration.AzureKeyVaultKeyPath, azureKeyProvider);
+        public static readonly KeyEncryptionKey keyEncryptionKey = new KeyEncryptionKey ("KEK", AzureKeyVaultKeyPath, azureKeyProvider);
 
         // Represents the encryption key that encrypts and decrypts the data items
         public static readonly ProtectedDataEncryptionKey encryptionKey = new ProtectedDataEncryptionKey ("DEK", keyEncryptionKey);

@@ -30,9 +30,6 @@ In order to access the key in Azure Key Vault and use it for encryption and decr
 #### [DataEncryption_IEnumerable](DataEncryption_IEnumerable)
 Encrypt an enumerable list of numbers
 
-#### [DataEncryptionDecryption_AKVInteractiveAuthentication](DataEncryptionDecryption_AKVInteractiveAuthentication)
-Authenticate to Azure Key Vault interactively
-
 #### [DataEncryptionDecryption_CustomObject](DataEncryptionDecryption_CustomObject)
 Encrypt and decrypt a custom object
 

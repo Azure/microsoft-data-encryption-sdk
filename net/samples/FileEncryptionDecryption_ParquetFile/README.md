@@ -7,23 +7,10 @@ This sample:
 
 ## Setup sample
 
-Provide below details in `ClientConfiguration` static class:
+Provide `AzureKeyVaultKeyPath` in the Program file:
 
-1. AzureKeyVaultKeyPath 
+The URL to your key in Azure Key Vault. The URL should include a version identifier, for example: https://example-vault.vault.azure.net:443/ExampleKey/ee1a695119e343328af6edbbd8d22093. For information on how to create a key and obtain its URL (including a key version id) using Azure Portal, see [Add a key to Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault).
 
-   The URL to your Key in Azure Key Vault. Example: "https://example-vault.vault.azure.net/keys/ExampleKey/", replacing "example-vault" with the name of the Azure Key Vault you created and "ExampleKey" if you used a different name for your key than the quickstart tutorials used.
-
-2. AzureTenantId
-
-   A GUID value found in the Azure portal in the overview section of Azure Active Directory.
-
-3. AzureClientId
-
-   The application ID you configured in  [Enable client application access]().
-
-4. AzureClientSecret
-
-    During  [Enable client application access](), one of the authentication options available was creating an application secret. Set this value to that secret.
 
 ## Run the sample
 
@@ -32,3 +19,4 @@ Once configuration is updated, run the sample with below command:
 ```
 dotnet run
 ```
+The program will authenticate user interactively to access Azure Key Vault specified above.
