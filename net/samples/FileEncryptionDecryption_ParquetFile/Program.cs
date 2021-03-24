@@ -43,7 +43,7 @@ namespace FileEncryptionDecryption_ParquetFile {
 
             // Modify a few column settings
             writerSettings[0] = new FileEncryptionSettings<DateTimeOffset?> (encryptionKey, SqlSerializerFactory.Default.GetDefaultSerializer<DateTimeOffset?> ());
-            writerSettings[3] = new FileEncryptionSettings<string> (encryptionKey, EncryptionType.Deterministic, new SqlVarcharSerializer (size: 255));
+            writerSettings[3] = new FileEncryptionSettings<string> (encryptionKey, EncryptionType.Deterministic, new SqlVarCharSerializer (size: 255));
             writerSettings[10] = new FileEncryptionSettings<double?> (encryptionKey, StandardSerializerFactory.Default.GetDefaultSerializer<double?> ());
 
             // Create and pass the target settings to the writer
