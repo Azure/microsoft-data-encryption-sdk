@@ -15,7 +15,7 @@ The latest preview release is [Microsoft.Data.Encryption.FileEncryption 0.2.0-pr
 
 - [Microsoft.Data.Encryption.FileEncryption 0.2.0-preview](preview)
 - [Microsoft.Data.Encryption.FileEncryption 0.1.0-preview](preview)
-a
+
 
 # Microsoft.Data.Encryption.AzureKeyVaultProvider Release Notes
 
